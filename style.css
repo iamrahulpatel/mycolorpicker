@@ -35,3 +35,58 @@
     font-size: 1.2em;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
+.container{
+    background-color: #363636;
+    height: 100vh;
+}
+.boxx{
+    height: 15rem;
+    width: 10rem;
+    background-color: aqua;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #363636;
+
+}
+
+.colorBox{
+    height: 30vh;
+    width: 20vh;
+    margin: 0.5rem;
+    border-radius: 2vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.colorBox:hover{
+    transform: scale(1.2);
+    transition-duration: 200ms;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.1);
+}
+
+.copiedBox{
+    padding:7px; 
+    border-radius:5px; 
+    position:fixed; 
+    top:10vh; 
+    left:45vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media(max-width:400px){
+    .colorBox{
+        height: 30vw;
+        width: 20vw;
+        margin: 0.5rem;
+        border-radius: 2vh;
+    }
+    .copiedBox{
+        padding:7px; 
+        border-radius:5px; 
+        position:fixed; 
+        top:10vw; 
+        left:30vw;
+    }
+}
