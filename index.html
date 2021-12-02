@@ -287,7 +287,7 @@
         const div = document.createElement("div");
         const app = (a.appendChild(div).innerHTML = `
       <div onclick="copyText('${colors[i][j]}')" id=${colors[i][j]} class="colorBox" style="background-color: ${colors[i][j]}; ">
-        <h3 id=${colors[i][j]} style="color:transparent" >${colors[i][j]}</h3>
+        <h3 id=${colors[i][j]} style="display:none" >${colors[i][j]}</h3>
         </div>
       `);
       }
@@ -307,7 +307,7 @@
       //showing the alert when copied
       const a = document.getElementById("show");
       const div = document.createElement("div");
-      const app = (a.appendChild(div).innerHTML = `
+      const app = (a.innerHTML = `
         <div class="copiedBox" style="background-color: ${htmlElement};">
           <span>Copied ${htmlElement.toUpperCase()}</span>
         </div>
