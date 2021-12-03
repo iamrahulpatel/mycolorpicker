@@ -48,13 +48,13 @@
 #main{
     display: flex;
     flex-wrap: wrap;
-    background-color: #363636;
+    background-color: #fff;
 
 }
 
 .colorBox{
     height: 30vh;
-    width: 20vh;
+    width: calc(100vw/9);
     margin: 0.5rem;
     border-radius: 2vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -70,9 +70,17 @@
     padding:7px; 
     border-radius:5px; 
     position:fixed; 
-    top:10vh; 
-    left:45vw;
+    /* top:10vh; 
+    left:45vw; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: bigger 1s linear 0s 1;
+}
+@keyframes bigger {
+    0%{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+    }
 }
 
 @media(max-width:400px){
@@ -85,8 +93,9 @@
     .copiedBox{
         padding:7px; 
         border-radius:5px; 
-        position:fixed; 
+        /* position:fixed; 
         top:10vw; 
-        left:30vw;
+        left:30vw; */
+        animation: bigger 1s linear;
     }
 }
